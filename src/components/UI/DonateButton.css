@@ -14,7 +14,7 @@
 }
 
 .buttonContainer::before {
-  content: url('../images/IMG_4447.svg');
+  content: url('../../images/IMG_4447.svg');
   position: relative;
   left: 76px;
   top: -22px;
@@ -22,7 +22,7 @@
 }
 
 .buttonContainer::after {
-  content: url('../images/IMG_4446.svg');
+  content: url('../../images/IMG_4446.svg');
   position: relative;
   top: 28px;
   left: -65px;
@@ -31,7 +31,7 @@
 .donate:hover {
   width: 321px;
   height: 76px;
-  filter: drop-shadow(4.6px 4.6px 13.8px #000000);
+  filter: drop-shadow(4px 4px 12px #000000);
 }
 
 .donate:focus {
@@ -47,7 +47,7 @@
     font-size: 17px;
   }
   .buttonContainer::before {
-    content: url('../images/IMG_4447_768.svg');
+    content: url('../../images/IMG_4447_768.svg');
     position: relative;
     left: 49px;
     top: -13px;
@@ -55,7 +55,7 @@
   }
 
   .buttonContainer::after {
-    content: url('../images/IMG_4446_768.svg');
+    content: url('../../images/IMG_4446_768.svg');
     position: relative;
     top: 19px;
     left: -47px;
@@ -94,7 +94,7 @@
     font-size: 12.6px;
   }
   .buttonContainer::before {
-    content: url('../images/IMG_4447_420.svg');
+    content: url('../../images/IMG_4447_420.svg');
     position: relative;
     left: 49px;
     top: -13px;
@@ -102,7 +102,7 @@
   }
 
   .buttonContainer::after {
-    content: url('../images/IMG_4446_420.svg');
+    content: url('../../images/IMG_4446_420.svg');
     position: relative;
     top: 19px;
     left: -47px;
