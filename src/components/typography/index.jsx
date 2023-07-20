@@ -1,1 +1,1 @@
-export * from "./PrimaryHeadline";
+export * from './Heading';
