@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -127,6 +131,9 @@ legend {
   max-width: 419px;
 
   padding: 0 20px;
+
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 420px) {
     min-width: 420px;
