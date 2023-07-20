@@ -1,0 +1,24 @@
+.primary_headline {
+  position: relative;
+  font-size: 100px;
+  font-weight: 800;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url("../../images/background_steel.png");
+  background-size: 1080px 522px;
+  background-position-x: -52px;
+  background-position-y: -65px;
+  z-index: 1;
+}
+
+.primary_headline_stroke {
+  position: absolute;
+  font-size: 100px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    -1px -1px 0 #000;
+  z-index: 0;
+  top: 0;
+}
