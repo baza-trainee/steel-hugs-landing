@@ -23,15 +23,6 @@
   background-position-x: -65px;
 }
 
-@media (max-width: 1024px) {
-  .heading._primary {
-    font-size: 64px;
-    background-size: 1350px 740px;
-    background-position-y: -52px;
-    background-position-x: -65px;
-  }
-}
-
 .heading._secondary {
   background-image: url('../../images/bg_heading_secondary.png');
   font-size: 62px;
@@ -74,7 +65,7 @@
   font-weight: 600;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1679px) {
   .heading._primary {
     font-size: 64px;
     background-size: 1350px 740px;
@@ -85,7 +76,6 @@
   .heading_stroke._primary {
     font-size: 64px;
   }
-
   .heading._numbers {
     font-size: 60px;
     background-size: 540px 172px;
@@ -98,7 +88,7 @@
   }
 }
 
-@media (max-width: 562px) {
+@media (max-width: 1023px) {
   .heading._numbers {
     font-size: 50px;
     background-size: 466px 140px;
@@ -111,7 +101,7 @@
   }
 }
 
-@media (max-width: 562px) {
+@media (max-width: 767px) {
   .heading._primary {
     font-size: 60px;
     background-size: 1242px 686px;
@@ -135,7 +125,12 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 561px) {
+  .heading_stroke {
+    text-shadow: 0.4px 0.4px 0 #000, 0.4px -0.4px 0 #000, -0.4px 0.4px 0 #000,
+      -0.4px -0.4px 0 #000;
+  }
+
   .heading._primary {
     font-size: 26px;
     background-size: 280px 183px;
