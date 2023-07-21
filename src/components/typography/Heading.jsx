@@ -1,4 +1,4 @@
-import './Heading.css';
+import './heading.css';
 
 export const Heading = ({ children, variant }) => {
   const headingVariants = {

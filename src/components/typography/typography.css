@@ -1,0 +1,26 @@
+.font {
+  color: #2a2a2a;
+}
+
+._main {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  ._main {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  ._main {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  ._main {
+    font-size: 12px;
+  }
+}
