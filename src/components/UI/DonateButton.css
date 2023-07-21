@@ -87,25 +87,31 @@
   }
 }
 
-@media (max-width: 420) {
+@media (max-width: 420px) {
   .donate {
     width: 134.94px;
     height: 32.35px;
     font-size: 12.6px;
   }
   .buttonContainer::before {
-    content: url('../../images/IMG_4447_420.svg');
+    content: url('./src/images/IMG_4447_420.svg');
     position: relative;
-    left: 49px;
-    top: -13px;
+    left: 37px;
+    top: -9px;
     z-index: 1;
   }
 
   .buttonContainer::after {
-    content: url('../../images/IMG_4446_420.svg');
+    content: url('./src/images/IMG_4446_420.svg');
     position: relative;
-    top: 19px;
-    left: -47px;
+    top: 15px;
+    left: -37px;
+  }
+
+  .donate:hover {
+    width: 134.94px;
+    height: 32.35px;
+    filter: drop-shadow(0 0 0 #ffffff);
   }
 
   .donate:focus {
