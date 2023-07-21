@@ -4,6 +4,7 @@ export const Heading = ({ children, variant }) => {
   const headingVariants = {
     primary: 'primary',
     secondary: 'secondary',
+    numbers: 'numbers',
   };
 
   return (
