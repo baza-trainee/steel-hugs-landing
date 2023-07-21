@@ -1,10 +1,10 @@
 import React from 'react';
 import './DonateButton.css';
 
-export default function DonateButton(props) {
+export default function DonateButton({ children }) {
   return (
     <div className='buttonContainer'>
-      <button {...props} className='donate'></button>
+      <button className='donate'>{children}</button>
     </div>
   );
 }
