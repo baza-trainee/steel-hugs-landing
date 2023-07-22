@@ -1,9 +1,10 @@
 import "./App.css";
-import Footer from "./components/Footer";
+import Brigada from "./components/Brigada/Brigada";
+// import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Footer />
+      <Brigada />
     </>
   );
 }

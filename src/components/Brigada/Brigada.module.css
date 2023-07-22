@@ -1,21 +1,19 @@
-.font {
+.text {
   color: #2a2a2a;
-}
 
-._main {
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
-}
 
-@media (min-width: 562px) {
-  ._main {
+  @media screen and (min-width: 562px) {
     font-size: 16px;
   }
-}
 
-@media (min-width: 1680px) {
-  ._main {
+  @media screen and (min-width: 1680px) {
     font-size: 24px;
   }
+}
+
+.header {
+  border: 1px solid red;
 }

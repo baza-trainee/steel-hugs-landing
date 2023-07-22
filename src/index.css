@@ -15,7 +15,6 @@ html {
   font-weight: 400;
   line-height: normal;
   color: #2a2a2a;
-  background-color: #fff;
 }
 
 *,
@@ -138,29 +137,29 @@ legend {
   @media screen and (min-width: 420px) {
     min-width: 420px;
     max-width: 420px;
-    padding: 0 40px;
+    padding: 12px 40px;
   }
   @media screen and (min-width: 562px) {
     min-width: 562px;
     max-width: 562px;
-    padding: 0 24px;
+    padding: 80px 24px;
   }
 
   @media screen and (min-width: 768px) {
     min-width: 768px;
     max-width: 768px;
-    padding: 0 60px;
+    padding: 80px 60px;
   }
 
   @media screen and (min-width: 1024px) {
     min-width: 1024px;
     max-width: 1024px;
-    padding: 0 140px;
+    padding: 100px 140px;
   }
 
   @media screen and (min-width: 1680px) {
     min-width: 1680px;
     max-width: 1680px;
-    padding: 0 200px;
+    padding: 100px 200px;
   }
 }
