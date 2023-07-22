@@ -26,14 +26,14 @@
 }
 
 .modal-content::before {
-  content: url('./src/images/Vector8.svg');
+  content: url("../../images/Vector8.svg");
   position: relative;
   top: 345px;
   left: -266px;
 }
 
 .modal-content::after {
-  content: url('./src/images/Vector7.svg');
+  content: url("../../mages/Vector7.svg");
   position: relative;
   top: -123px;
   left: 594px;
@@ -90,13 +90,13 @@
     top: -170px;
   }
   .modal-content::before {
-    content: url('./src/images/Vector8_1024.svg');
+    content: url("../../images/Vector8_1024.svg");
     top: 325px;
     left: -201px;
   }
 
   .modal-content::after {
-    content: url('./src/images/Vector7_1024.svg');
+    content: url("../../images/Vector7_1024.svg");
     top: -75px;
     left: 408px;
   }
@@ -109,12 +109,12 @@
     }
   }
   .modal-content::before {
-    content: url('./src/images/Vector8_768.svg');
+    content: url("../../images/Vector8_768.svg");
     top: 317px;
     left: -144px;
   }
   .modal-content::after {
-    content: url('./src/images/Vector7_768.svg');
+    content: url("../../images/Vector7_768.svg");
     top: -29px;
     left: 375px;
   }
@@ -137,12 +137,12 @@
     left: 505px;
   }
   .modal-content::before {
-    content: url('./src/images/Vector8_562.svg');
+    content: url("../../images/Vector8_562.svg");
     top: 345px;
     left: -80px;
   }
   .modal-content::after {
-    content: url('./src/images/Vector7_562.svg');
+    content: url("../../images/Vector7_562.svg");
     top: -38px;
     left: 320px;
   }
@@ -163,12 +163,12 @@
     left: 326px;
   }
   .modal-content::before {
-    content: url('./src/images/Vector8_420.svg');
+    content: url("../../images/Vector8_420.svg");
     top: 247px;
     left: -40px;
   }
   .modal-content::after {
-    content: url('./src/images/Vector7_420.svg');
+    content: url("../../images/Vector7_420.svg");
     top: 11px;
     left: 204px;
   }
