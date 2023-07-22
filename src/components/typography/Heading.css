@@ -1,6 +1,8 @@
 .heading_container {
   position: relative;
-  width: fit-content;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .heading {
@@ -15,7 +17,7 @@
 }
 
 .heading._primary {
-  background-image: url('../../images/bg_heading_primary.png');
+  background-image: url("../../images/bg_heading_primary.png");
   font-size: 100px;
   font-weight: 800;
   background-size: 1080px 522px;
@@ -24,7 +26,7 @@
 }
 
 .heading._secondary {
-  background-image: url('../../images/bg_heading_secondary.png');
+  background-image: url("../../images/bg_heading_secondary.png");
   font-size: 62px;
   font-weight: 600;
   background-size: 620px 148px;
@@ -33,7 +35,7 @@
 }
 
 .heading._numbers {
-  background-image: url('../../images/bg_heading_primary.png');
+  background-image: url("../../images/bg_heading_primary.png");
   font-size: 72px;
   font-weight: 600;
   background-size: 618px 206px;
