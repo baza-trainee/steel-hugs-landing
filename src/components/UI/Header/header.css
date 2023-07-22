@@ -3,6 +3,7 @@
   width: 100%;
   top: 0;
   z-index: 100;
+  background-color: #fff;
 }
 
 .header_wrapper {
@@ -13,6 +14,7 @@
   align-items: center;
   gap: 274px;
   border-bottom: 2px solid #f5dd00;
+  background-color: #fff;
 }
 
 .header_undercover {
@@ -22,10 +24,12 @@
   width: 100vw;
   height: 100px;
   z-index: -1;
+  background-color: #fff;
 }
 
 .nav_wrapper {
   height: fit-content;
+  background-color: #fff;
 }
 
 .nav_list {
