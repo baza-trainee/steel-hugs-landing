@@ -1,0 +1,110 @@
+.shareContainer {
+  width: 125%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shareButton {
+  width: 325px;
+  height: 66px;
+  background-color: #f5dd00;
+  color: #2a2a2a;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.shareContainer::before {
+  content: url('./src/images/IMG_4493.svg');
+  position: relative;
+  left: 42px;
+  top: 39px;
+  z-index: 1;
+}
+
+.shareContainer::after {
+  content: url('./src/images/IMG_4494.svg');
+  position: relative;
+  top: 85px;
+  left: -85px;
+}
+
+.shareButton:hover {
+  width: 448px;
+  height: 76px;
+  filter: drop-shadow(4px 4px 12px #000000);
+}
+
+.shareButton_clicked {
+  width: 448px;
+  height: 76px;
+  background-color: #fff7ac;
+}
+
+@media (max-width: 768px) {
+  .shareButton {
+    width: 171px;
+    height: 34px;
+    font-size: 13.5px;
+  }
+
+  .shareContainer::before {
+    content: url('./src/images/IMG_4493_768.svg');
+    position: relative;
+    left: 18px;
+    top: 22px;
+    z-index: 1;
+  }
+
+  .shareContainer::after {
+    content: url('./src/images/IMG_4494_768.svg');
+    position: relative;
+    top: 38px;
+    left: -51px;
+  }
+
+  .shareButton:hover {
+    width: 218px;
+    height: 38.5px;
+  }
+
+  .shareButton_clicked {
+    width: 218px;
+    height: 38.5px;
+  }
+}
+
+@media (max-width: 420px) {
+  .shareButton {
+    width: 180px;
+    height: 32.6px;
+    font-size: 12.8px;
+  }
+
+  .shareContainer::before {
+    content: url('./src/images/IMG_4493_420.svg');
+    position: relative;
+    left: 22px;
+    top: 21px;
+    z-index: 1;
+  }
+
+  .shareContainer::after {
+    content: url('./src/images/IMG_4494_420.svg');
+    position: relative;
+    top: 24px;
+    left: -56px;
+  }
+
+  .shareButton:hover {
+    width: 180px;
+    height: 32.6px;
+    filter: drop-shadow(0 0 0 #ffffff);
+  }
+
+  .shareButton_clicked {
+    width: 180px;
+    height: 32.6px;
+  }
+}
