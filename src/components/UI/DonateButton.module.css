@@ -1,0 +1,109 @@
+.button {
+  position: relative;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+
+  width: 182px;
+  height: 43px;
+
+  border-radius: 8px;
+  background-color: #f5dd00;
+
+  transition: all 200ms ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/IMG_4447_420.svg);
+    width: 70px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transition: all 200ms ease-in-out;
+
+    top: -20px;
+    left: -20px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/IMG_4446_420.svg);
+    width: 45px;
+    height: 56px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transition: all 200ms ease-in-out;
+
+    bottom: -22px;
+    right: 0px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #fff7ac;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+
+    width: 279px;
+    height: 66px;
+
+    border-radius: 12px;
+
+    &::before {
+      width: 105px;
+      height: 82px;
+
+      top: -32px;
+      left: -27px;
+    }
+
+    &::after {
+      width: 65px;
+      height: 88px;
+
+      bottom: -35px;
+      right: 0px;
+    }
+
+    &:hover,
+    &:focus {
+      font-size: 28px;
+
+      width: 321px;
+      height: 72px;
+
+      background-color: #f5dd00;
+
+      &::before {
+        width: 120px;
+        height: 92px;
+
+        top: -35px;
+        left: -30px;
+      }
+
+      &::after {
+        width: 75px;
+        height: 102px;
+
+        bottom: -40px;
+        right: 0px;
+      }
+    }
+    &:focus {
+      background-color: #fff7ac;
+    }
+  }
+}
