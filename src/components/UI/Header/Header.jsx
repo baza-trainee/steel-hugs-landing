@@ -11,29 +11,33 @@ const navButtons = [
 ];
 
 export const Header = ({ buttons = navButtons }) => {
-  const [active, setActive] = useState(false);
-
-  const handleBurgerMenu = () => {
-    setActive(!active);
-  };
+  const [active, setActive] = useState();
 
   return (
-    <div className="header_container">
-      <header className="header_wrapper">
-        <div className="logo_wrapper">
-          <img className="logo_img" src={Logo} alt="logo" />
+    <>
+      <header className="header_container">
+        <div className="header_wrapper">
+          <div className="logo_wrapper">
+            <img className="logo_img" src={Logo} alt="logo" />
+          </div>
+          <nav className={active ? 'nav_wrapper active' : 'nav_wrapper'} x>
+            <ul className="nav_list">
+              {buttons.map((button) => (
+                <li className="nav_item" key={button.text}>
+                  <a className="nav_href">{button.text}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div
+            className="burger_menu_icon"
+            onClick={() => setActive(!active)}
+          />
+          <div
+            className={active ? 'burger_menu_blur active' : 'burger_menu_blur'}
+          ></div>
         </div>
-        <nav className={active ? 'nav_wrapper active' : 'nav_wrapper'}>
-          <ul className="nav_list">
-            {buttons.map((button) => (
-              <li className="nav_item" key={button.text}>
-                <a className="nav_href">{button.text}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div onClick={handleBurgerMenu} className="burger_menu_icon" />
       </header>
-    </div>
+    </>
   );
 };
