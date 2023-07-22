@@ -1,0 +1,175 @@
+.header_container {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.header_wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 274px;
+  border-bottom: 2px solid #f5dd00;
+}
+
+.header_undercover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+  z-index: -1;
+}
+
+.nav_wrapper {
+  height: fit-content;
+}
+
+.nav_list {
+  display: flex;
+  gap: 50px;
+}
+
+.nav_item {
+  width: fit-content;
+  height: fit-content;
+  padding: 6px 0;
+}
+
+.nav_href {
+  color: #2a2a2a;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: text-shadow 0.3s;
+}
+
+.logo_wrapper {
+  width: 102px;
+  height: 58px;
+}
+
+.logo_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.burger_menu_icon {
+  width: 32px;
+  height: 32px;
+  background-image: url('../../../images/burger_menu_icon.svg');
+  display: none;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .nav_href:hover {
+    text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+  }
+}
+
+@media (max-width: 1679px) {
+  .header_wrapper {
+    gap: 0;
+    justify-content: space-between;
+    max-width: 724px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .burger_menu_icon {
+    display: block;
+    z-index: 100px;
+  }
+
+  .header_wrapper {
+    max-width: 648px;
+  }
+
+  .nav_wrapper {
+    position: fixed;
+    z-index: -2;
+    right: 0;
+    top: 100px;
+    padding: 40px 60px;
+    width: 268px;
+    top: -300px;
+    transition: top 1s;
+  }
+
+  .nav_list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav_href {
+    font-size: 20px;
+  }
+
+  .active {
+    top: 100px;
+  }
+
+  .burger_menu_blur {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.18);
+    width: 100%;
+    height: 100vh;
+    top: 100px;
+    left: 0;
+    z-index: -3;
+    transition: all 2s;
+    display: none;
+  }
+
+  .burger_menu_blur.active {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .header_wrapper {
+    max-width: 512px;
+  }
+}
+
+@media (max-width: 561px) {
+  .logo_wrapper {
+    width: 56px;
+    height: 32px;
+  }
+
+  .header_wrapper {
+    padding: 10px 40px 20px 40px;
+  }
+
+  .nav_wrapper {
+    width: 180px;
+    padding: 20px 34px;
+  }
+
+  .nav_href {
+    font-size: 15px;
+  }
+
+  .nav_list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .active {
+    top: 50px;
+  }
+
+  .burger_menu_blur {
+    top: 64px;
+  }
+
+  .header_undercover {
+    height: 64px;
+  }
+}
