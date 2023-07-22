@@ -1,0 +1,108 @@
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+
+  @media screen and (min-width: 562px) {
+    margin-bottom: 20px;
+  }
+}
+
+.bold {
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: 600;
+}
+
+.text {
+  color: #2a2a2a;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+
+  display: block;
+  width: 100%;
+
+  @media screen and (min-width: 562px) {
+    font-size: 16px;
+    width: 250px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 314px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 362px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    width: 515px;
+    font-size: 24px;
+  }
+}
+
+.content_container {
+  position: relative;
+  @media screen and (min-width: 562px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 63px;
+
+    @media screen and (min-width: 1024px) {
+      padding-bottom: 86px;
+    }
+  }
+}
+.brigada_button {
+  position: absolute;
+  top: 60%;
+
+  @media screen and (min-width: 562px) {
+    top: calc(100% - 43px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (min-width: 1024px) {
+    top: calc(100% - 66px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.image {
+  background-image: url(../../../images/brigada_420.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  width: 185px;
+  height: 154px;
+  margin-left: auto;
+
+  @media screen and (min-width: 562px) {
+    width: 250px;
+    height: 185px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../../../images/brigada_768.png);
+    width: 314px;
+    height: 234px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: url(../../../images/brigada_1024.png);
+    width: 362px;
+    height: 270px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    background-image: url(../../../images/brigada_1680.png);
+    width: 648px;
+    height: 482px;
+  }
+}

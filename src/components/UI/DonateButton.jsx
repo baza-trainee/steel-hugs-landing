@@ -1,10 +1,9 @@
-import React from 'react';
-import './DonateButton.css';
+import styles from "./DonateButton.module.css";
 
-export default function DonateButton({ children }) {
+export default function Button({ children }) {
   return (
-    <div className='buttonContainer'>
-      <button className='donate'>{children}</button>
-    </div>
+    <button className={styles.button} type="button">
+      {children}
+    </button>
   );
 }
