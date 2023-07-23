@@ -1,9 +1,9 @@
 import { Heading } from "../../typography/Heading";
 
 import styles from "./Brigada.module.css";
-import DonateButton from "../DonateButton";
+import DonateButton from "../DonateButton/DonateButton";
 
-export default function Brigada() {
+export default function Brigada({ modal }) {
   return (
     <section>
       <div className="container">
@@ -22,7 +22,7 @@ export default function Brigada() {
             Визвольних змагань.
           </p>
           <div className={styles.brigada_button}>
-            <DonateButton>Обійняти</DonateButton>
+            <DonateButton modal={modal}>Обійняти</DonateButton>
           </div>
           <div className={styles.image}></div>
         </div>
