@@ -34,9 +34,9 @@
   filter: drop-shadow(4px 4px 12px #000000);
 }
 
-.donate:focus {
-  width: 320.95px;
-  height: 76.02px;
+.donateButton_clicked {
+  width: 321px;
+  height: 76px;
   background-color: #fff7ac;
 }
 
@@ -66,10 +66,9 @@
     height: 49px;
   }
 
-  .donate:focus {
+  .donateButton_clicked {
     width: 205px;
     height: 49px;
-    background-color: #fff7ac;
   }
 }
 
@@ -79,11 +78,9 @@
     height: 43px;
     filter: drop-shadow(0 0 0 #ffffff);
   }
-
-  .donate:focus {
+  .donateButton_clicked {
     width: 182px;
     height: 43px;
-    background-color: #fff7ac;
   }
 }
 
@@ -114,9 +111,8 @@
     filter: drop-shadow(0 0 0 #ffffff);
   }
 
-  .donate:focus {
+  .donateButton_clicked {
     width: 134.94px;
     height: 32.35px;
-    background-color: #fff7ac;
   }
 }

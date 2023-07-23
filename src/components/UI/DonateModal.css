@@ -1,0 +1,233 @@
+.donateModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+
+  &.donateModalActive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .donateModalContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+    background: white;
+  }
+}
+
+.donateModalContent::before {
+  position: relative;
+}
+
+.donateModalContent::after {
+  position: relative;
+}
+
+.sumButtons {
+  display: flex;
+}
+
+.sumButtons button {
+  width: 116.3px;
+  height: 62px;
+  margin: 0 32px 24px 0;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.sumButtons button:last-child {
+  margin-right: 0;
+}
+
+.donationSum {
+  border: 1px solid #f5dd00;
+  width: 413px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.donationSum[type='text'] {
+  padding: 15px;
+}
+
+.donateInModal {
+  width: 500px;
+  margin-top: 30px;
+}
+
+@media (min-width: 0px) {
+  .donateModal {
+    .donateModalContent {
+      width: 340px;
+      height: 355px;
+      padding: 0;
+    }
+  }
+
+  .donateModalContent::before {
+    content: url('./src/images/Hands_left_420.svg');
+    top: 4px;
+    left: -222px;
+  }
+
+  .donateModalContent::after {
+    content: url('./src/images/Hands_right_420.svg');
+    top: -420px;
+    left: 225px;
+  }
+
+  .sumButtons {
+    margin-top: 50px;
+  }
+
+  .sumButtons button {
+    width: 76px;
+    height: 40px;
+    margin: 0 16px 20px 0;
+    font-size: 12px;
+  }
+
+  .donationSum {
+    width: 260px;
+  }
+
+  .donationSum[type='text'] {
+    padding: 5px;
+  }
+
+  .donateInModal {
+    margin: 25px 25px 0 0;
+  }
+}
+
+@media (min-width: 568px) {
+  .donateModal {
+    .donateModalContent {
+      width: 514px;
+      height: 498px;
+    }
+  }
+
+  .sumButtons {
+    margin-top: 75px;
+  }
+
+  .sumButtons button {
+    width: 106.33px;
+    height: 62px;
+    margin: 0 24px 32px 0;
+    font-size: 20px;
+  }
+
+  .donationSum {
+    width: 382px;
+  }
+
+  .donationSum[type='text'] {
+    padding: 16px;
+  }
+
+  .donateInModal {
+    margin: 40px 23px 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .donateModal {
+    .donateModalContent {
+      width: 648px;
+      height: 538px;
+    }
+  }
+
+  .donateModalContent::before {
+    content: url('./src/images/Hands_left_768.svg');
+    top: 0;
+    left: -273px;
+  }
+
+  .donateModalContent::after {
+    content: url('./src/images/Hands_right_768.svg');
+    top: -500px;
+    left: 275px;
+  }
+
+  .sumButtons {
+    margin-top: 30px;
+  }
+
+  .sumButtons button {
+    width: 138.33px;
+    margin-right: 33px;
+  }
+
+  .donationSum {
+    width: 479px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .donateModal {
+    .donateModalContent {
+      width: 743px;
+    }
+  }
+
+  .donateModalContent::before {
+    content: url('./src/images/Hands_left_1024.svg');
+    top: 5px;
+    left: -311px;
+  }
+
+  .donateModalContent::after {
+    content: url('./src/images/Hands_right_1024.svg');
+    top: -491px;
+    left: 314px;
+  }
+
+  .sumButtons {
+    margin-top: 50px;
+  }
+
+  .sumButtons button {
+    width: 100px;
+    margin-right: 33px;
+  }
+
+  .donationSum {
+    width: 361px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .donateModal {
+    .donateModalContent {
+      padding: 0 530px 0 530px;
+      height: 538px;
+    }
+  }
+
+  .donateModalContent::before {
+    content: url('./src/images/Hands_left.svg');
+    top: 0;
+    left: -402px;
+  }
+
+  .donateModalContent::after {
+    content: url('./src/images/Hands_right.svg');
+    top: -499px;
+    left: 406px;
+  }
+
+  .sumButtons {
+    margin-top: -15px;
+  }
+}

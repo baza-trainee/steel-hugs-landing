@@ -1,9 +1,11 @@
-import "./App.css";
+import './App.css';
+import DonateButton from './components/UI/DonateButton';
 
-import Footer from "./components/Footer";
+import Footer from './components/Footer';
 function App() {
   return (
     <>
+      <DonateButton>Обійняти</DonateButton>
       <Footer />
     </>
   );
