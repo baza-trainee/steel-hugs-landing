@@ -1,9 +1,9 @@
 import { Heading } from "../../typography/Heading";
 
 import styles from "./HowItWorks.module.css";
-import DonateButton from "../DonateButton";
+import DonateButton from "../DonateButton/DonateButton";
 
-export default function HowItWorks() {
+export default function HowItWorks({ modal }) {
   return (
     <section>
       <div className="container">
@@ -13,7 +13,7 @@ export default function HowItWorks() {
 
         <div className={styles.content_container}>
           <div className={styles.howItWorks_button}>
-            <DonateButton>Мій донат</DonateButton>
+            <DonateButton modal={modal}>Мій донат</DonateButton>
           </div>
           <div className={styles.firstArrow}></div>
           <div className={styles.secondArrow}></div>

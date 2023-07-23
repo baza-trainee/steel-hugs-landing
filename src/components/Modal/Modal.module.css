@@ -1,0 +1,42 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.18);
+  z-index: 1200;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 340px;
+  height: 355px;
+
+  @media screen and (min-width: 562px) {
+    width: 514px;
+    height: 498px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 648px;
+    height: 538px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 743px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    width: 1064px;
+  }
+}

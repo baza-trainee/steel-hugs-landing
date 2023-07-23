@@ -16,7 +16,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url(../../images/IMG_4447_420.svg);
+    background-image: url(../../../images/IMG_4447_420.svg);
     width: 70px;
     height: 50px;
     background-position: center;
@@ -32,7 +32,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-image: url(../../images/IMG_4446_420.svg);
+    background-image: url(../../../images/IMG_4446_420.svg);
     width: 45px;
     height: 56px;
     background-position: center;
