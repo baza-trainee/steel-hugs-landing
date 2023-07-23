@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footerRights">
-        <p>Розробка Baza Trainee. Всі права захищені.</p>
+        <p>Розробка Baza Trainee Ukraine 2023. Всі права захищені.</p>
       </div>
     </div>
   );
