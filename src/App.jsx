@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Modal } from "./components/Modal/Modal";
 import DonateModal from "./components/UI/DonateModal/DonateModal";
 import ThanksModal from "./components/UI/ThanksModal/ThanksModal";
+import Report from "./components/UI/Report/Report";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,6 +29,7 @@ function App() {
       <Brigada modal={toggleModal} />
       <HowItWorks modal={toggleModal} />
       <Gathering />
+      <Report />
       <Footer />
 
       {isModalOpen && (
