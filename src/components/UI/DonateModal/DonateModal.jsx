@@ -43,6 +43,7 @@ export default function DonateModal({ isThanks }) {
         placeholder="Введіть свою суму"
         className={styles.input}
         value={amount}
+        required
         onChange={(e) => setAmount(e.target.value.toString())}
       />
 

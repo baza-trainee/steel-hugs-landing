@@ -15,6 +15,7 @@ function App() {
 
   const toggleModal = () => {
     setIsModalOpen((prev) => !prev);
+    setisThanks(false);
   };
 
   const toggleThanks = () => {
