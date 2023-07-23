@@ -23,9 +23,10 @@
   font-size: 20px;
   text-align: center;
   padding-top: 100px;
+  margin-bottom: 60px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1679px) {
   .footerHead {
     width: 310px;
     font-size: 24px;
@@ -36,10 +37,11 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 561px) {
   .footerHead {
     width: 260px;
     font-size: 20px;
+    background-color: transparent;
   }
 
   .footerRights {

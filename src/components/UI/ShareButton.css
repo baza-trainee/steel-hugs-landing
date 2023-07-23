@@ -1,6 +1,5 @@
 .shareContainer {
-  width: 125%;
-  height: 168px;
+  margin-left: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +43,10 @@
 }
 
 @media (max-width: 768px) {
+  .shareContainer {
+    margin-left: 80px;
+  }
+
   .shareButton {
     width: 171px;
     height: 34px;
@@ -79,18 +82,27 @@
     height: 38.5px;
   }
 }
+/* @media (max-width: 719px) {
+  .shareContainer {
+    width: 100%;
+    margin-left: 40px;
+  }
+} */
 
-@media (max-width: 420px) {
+@media (max-width: 561px) {
+  .shareContainer {
+    margin-left: 0;
+    /* width: 100%; */
+  }
+
   .shareButton {
     width: 180px;
     height: 32.6px;
     font-size: 12.8px;
   }
 
-  .shareContainer {
-    width: 100%;
-    padding-right: 50px;
-    height: 0;
+  .footerButton {
+    margin-right: 45px;
   }
 
   .shareContainer::before {
@@ -103,6 +115,9 @@
 
   .shareContainer::after {
     content: url('');
+    position: relative;
+    top: 24px;
+    left: -56px;
   }
 
   .shareButton:hover {
