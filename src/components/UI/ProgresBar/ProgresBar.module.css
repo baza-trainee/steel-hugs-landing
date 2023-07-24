@@ -61,7 +61,8 @@
     height: 52px;
   }
   @media screen and (min-width: 1680px) {
-    margin: 40px 0;
+    margin: 40px auto;
+    width: 1040px;
   }
 }
 

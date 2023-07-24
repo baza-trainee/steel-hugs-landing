@@ -1,14 +1,14 @@
-import './header.css';
-import Logo from '../../../images/logo.png';
-import { useState } from 'react';
-import { useRef } from 'react';
+import "./header.css";
+import Logo from "../../../images/logo.png";
+import { useState } from "react";
+import { useRef } from "react";
 
 const navLinks = [
-  { text: 'Мета', sectionId: 'section_meta' },
-  { text: 'Бригада', sectionId: 'section_brigade' },
-  { text: 'Як це працює', sectionId: 'section_how_it_works' },
-  { text: 'Збір', sectionId: 'section_collection' },
-  { text: 'Звіт', sectionId: 'section_report' },
+  { text: "Мета", sectionId: "section_meta" },
+  { text: "Бригада", sectionId: "section_brigade" },
+  { text: "Як це працює", sectionId: "section_how_it_works" },
+  { text: "Збір", sectionId: "section_collection" },
+  { text: "Звіт", sectionId: "section_report" },
 ];
 
 export const Header = ({ links = navLinks }) => {
@@ -32,7 +32,7 @@ export const Header = ({ links = navLinks }) => {
           <div className="logo_wrapper">
             <img className="logo_img" src={Logo} alt="logo" />
           </div>
-          <nav className={active ? 'nav_wrapper active' : 'nav_wrapper'} x>
+          <nav className={active ? "nav_wrapper active" : "nav_wrapper"}>
             <ul className="nav_list">
               {links.map((link) => (
                 <li className="nav_item" key={link.sectionId}>
@@ -52,7 +52,7 @@ export const Header = ({ links = navLinks }) => {
           />
         </div>
         <div
-          className={active ? 'burger_menu_blur active' : 'burger_menu_blur'}
+          className={active ? "burger_menu_blur active" : "burger_menu_blur"}
         ></div>
       </header>
     </>
