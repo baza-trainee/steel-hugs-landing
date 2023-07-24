@@ -3,7 +3,7 @@ import { Heading } from "../../typography/Heading";
 
 export default function Report() {
   return (
-    <section>
+    <section id="section_report">
       <div className="container">
         <div className={styles.title}>
           <Heading variant="secondary">Звіт</Heading>
