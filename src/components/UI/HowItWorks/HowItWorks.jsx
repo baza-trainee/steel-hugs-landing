@@ -5,7 +5,7 @@ import DonateButton from "../DonateButton/DonateButton";
 
 export default function HowItWorks({ modal }) {
   return (
-    <section>
+    <section id="section_how_it_works">
       <div className="container">
         <div className={styles.title}>
           <Heading variant="secondary">Як це працює</Heading>

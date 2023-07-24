@@ -4,7 +4,7 @@ import DonateButton from "../DonateButton/DonateButton";
 import ProgresBar from "../ProgresBar/ProgresBar";
 export default function Goal({ modal }) {
   return (
-    <section>
+    <section id="section_meta">
       <div className={styles.container}>
         <div className={styles.title}>
           <Heading variant="primary">Сталеві Обійми</Heading>
