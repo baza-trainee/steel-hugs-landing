@@ -1,3 +1,44 @@
+.container {
+  display: block;
+  min-width: 320px;
+  max-width: 419px;
+
+  padding: 12px 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 420px) {
+    min-width: 420px;
+    max-width: 420px;
+    padding: 12px 40px 8px 40px;
+  }
+  @media screen and (min-width: 562px) {
+    min-width: 562px;
+    max-width: 562px;
+    padding: 24px 24px 80px 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    max-width: 768px;
+    padding: 24px 60px 80px 60px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    min-width: 1024px;
+    max-width: 1024px;
+    padding: 24px 140px 20px 140px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    min-width: 1680px;
+    max-width: 1680px;
+    padding: 100px 200px;
+    padding: 24px 200px 120px 200px;
+  }
+}
+
 .title {
   display: flex;
   justify-content: center;
@@ -16,12 +57,39 @@
   font-weight: 500;
 
   margin-bottom: 8px;
+
+  @media screen and (min-width: 562px) {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1680px) {
+    font-size: 32px;
+  }
+}
+
+.flexBox {
+  @media screen and (min-width: 562px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .contentBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 14px;
+
+  @media screen and (min-width: 562px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1680px) {
+    margin-bottom: 0;
+  }
 }
 
 .image {
@@ -32,16 +100,61 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media screen and (min-width: 562px) {
+    width: 250px;
+    height: 208px;
+    background-image: url(../../../images/goal_562.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 314px;
+    height: 262px;
+    background-image: url(../../../images/goal_768.png);
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 362px;
+    height: 303px;
+    background-image: url(../../../images/goal_562.png);
+  }
+
+  @media screen and (min-width: 1680px) {
+    width: 606px;
+    height: 508px;
+    background-image: url(../../../images/goal_562.png);
+  }
 }
 .textBox {
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: right; */
 }
 .text {
   font-size: 15px;
   font-weight: 400;
+  font-style: normal;
+  line-height: normal;
   text-align: right;
 
   display: block;
   width: 200px;
+
+  @media screen and (min-width: 562px) {
+    font-size: 20px;
+    font-weight: 500;
+    width: 250px;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    width: 320px;
+  }
+  @media screen and (min-width: 1680px) {
+    width: 550px;
+    font-size: 40px;
+  }
 }
 .number {
   text-align: right;
@@ -49,4 +162,8 @@
 }
 .button {
   text-align: right;
+
+  @media screen and (min-width: 562px) {
+    text-align: left;
+  }
 }
