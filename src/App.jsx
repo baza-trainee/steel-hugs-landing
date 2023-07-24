@@ -9,6 +9,7 @@ import { Modal } from "./components/Modal/Modal";
 import DonateModal from "./components/UI/DonateModal/DonateModal";
 import ThanksModal from "./components/UI/ThanksModal/ThanksModal";
 import Report from "./components/UI/Report/Report";
+import Goal from "./components/UI/Goal/Goal";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,6 +27,7 @@ function App() {
   return (
     <>
       <Header />
+      <Goal modal={toggleModal} />
       <Brigada modal={toggleModal} />
       <HowItWorks modal={toggleModal} />
       <Gathering />
