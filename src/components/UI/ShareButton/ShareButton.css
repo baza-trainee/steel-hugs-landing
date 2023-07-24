@@ -1,6 +1,5 @@
 .shareContainer {
-  width: 125%;
-  height: 168px;
+  margin-left: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +16,7 @@
 }
 
 .shareContainer::before {
-  content: url("../../../images/IMG_4493.svg");
+  content: url('../../../images/IMG_4493.svg');
   position: relative;
   left: 42px;
   top: 39px;
@@ -25,7 +24,7 @@
 }
 
 .shareContainer::after {
-  content: url("../../../images/IMG_4494.svg");
+  content: url('../../../images/IMG_4494.svg');
   position: relative;
   top: 85px;
   left: -85px;
@@ -52,10 +51,11 @@
 
   .shareContainer {
     height: 60px;
+    margin-left: 80px;
   }
 
   .shareContainer::before {
-    content: url("../../../images/IMG_4493_768.svg");
+    content: url('../../../images/IMG_4493_768.svg');
     position: relative;
     left: 18px;
     top: 22px;
@@ -63,7 +63,7 @@
   }
 
   .shareContainer::after {
-    content: url("../../../images/IMG_4494_768.svg");
+    content: url('../../../images/IMG_4494_768.svg');
     position: relative;
     top: 38px;
     left: -51px;
@@ -80,21 +80,23 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 561px) {
+  .shareContainer {
+    margin-left: 0;
+  }
+
   .shareButton {
     width: 180px;
     height: 32.6px;
     font-size: 12.8px;
   }
 
-  .shareContainer {
-    width: 100%;
-    padding-right: 50px;
-    height: 0;
+  .footerButton {
+    margin-right: 45px;
   }
 
   .shareContainer::before {
-    content: url("../../../images/IMG_4493_420.svg");
+    content: url('../../../images/IMG_4493_420.svg');
     position: relative;
     left: 22px;
     top: 21px;
@@ -102,7 +104,7 @@
   }
 
   .shareContainer::after {
-    content: url("");
+    content: url('');
   }
 
   .shareButton:hover {
