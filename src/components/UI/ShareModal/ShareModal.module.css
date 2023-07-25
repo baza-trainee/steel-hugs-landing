@@ -14,7 +14,7 @@
     align-items: center;
   }
 }
-.modal-content {
+.modal_content {
   padding: 0 330px 0 330px;
   display: flex;
   flex-direction: column;
@@ -24,14 +24,14 @@
   height: 540px;
 }
 
-.modal-content::before {
+.modal_content::before {
   content: url('../../../images/Vector8.svg');
   position: relative;
   top: 370px;
   left: -332px;
 }
 
-.modal-content::after {
+.modal_content::after {
   content: url('../../../images/Vector7.svg');
   position: relative;
   top: -85px;
@@ -71,7 +71,7 @@
   background-color: #7c529e;
 }
 
-.close-button {
+.close_button {
   position: relative;
   top: -230px;
   left: 1250px;
@@ -79,23 +79,24 @@
 
 @media (max-width: 1680px) {
   .modal {
-    .modal-content {
+    .modal_content {
       padding: 0 215px 0 215px;
       height: 480px;
     }
   }
 
-  .close-button {
+  .close_button {
     left: 820px;
     top: -205px;
   }
-  .modal-content::before {
+  
+  .modal_content::before {
     content: url('../../../images/Vector8_1024.svg');
     top: 337px;
     left: -216px;
   }
 
-  .modal-content::after {
+  .modal_content::after {
     content: url('../../../images/Vector7_1024.svg');
     top: -31px;
     left: 471px;
@@ -109,22 +110,22 @@
 
 @media (max-width: 1024px) {
   .modal {
-    .modal-content {
+    .modal_content {
       padding: 0 143px 0 143px;
       height: 420px;
     }
   }
-  .modal-content::before {
+  .modal_content::before {
     content: url('../../../images/Vector8_768.svg');
     top: 300px;
     left: -144px;
   }
-  .modal-content::after {
+  .modal_content::after {
     content: url('../../../images/Vector7_768.svg');
     top: -29px;
     left: 377px;
   }
-  .close-button {
+  .close_button {
     top: -177px;
     left: 630px;
   }
@@ -133,28 +134,24 @@
     width: 362px;
     height: 44px;
   }
-
-  .socials p {
-    margin-bottom: 37px;
-  }
 }
 
 @media (max-width: 768px) {
   .modal {
-    .modal-content {
+    .modal_content {
       padding: 0 80px 0 80px;
       height: 430px;
     }
   }
-  .close-button {
+  .close_button {
     left: 505px;
   }
-  .modal-content::before {
+  .modal_content::before {
     content: url('../../../images/Vector8_562.svg');
     top: 313px;
     left: -81px;
   }
-  .modal-content::after {
+  .modal_content::after {
     content: url('../../../images/Vector7_562.svg');
     top: 0;
     left: 320px;
@@ -163,21 +160,21 @@
 
 @media (max-width: 562px) {
   .modal {
-    .modal-content {
+    .modal_content {
       padding: 0 40px 0 40px;
       height: 345px;
     }
   }
-  .close-button {
+  .close_button {
     top: -140px;
     left: 326px;
   }
-  .modal-content::before {
+  .modal_content::before {
     content: url('../../../images/Vector8_420.svg');
     top: 269px;
     left: -41px;
   }
-  .modal-content::after {
+  .modal_content::after {
     content: url('../../../images/Vector7_420.svg');
     top: 1px;
     left: 204px;
@@ -188,8 +185,4 @@
     width: 260px;
   }
 
-  .socials p {
-    font-size: 16px;
-    margin-bottom: 17px;
-  }
 }

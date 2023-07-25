@@ -1,5 +1,5 @@
 import React from 'react';
-import './ShareModal.css';
+import styles from './ShareModal.module.css';
 import Group57 from '../../../images/Group57.svg';
 import {
   FacebookShareButton,
@@ -8,30 +8,33 @@ import {
 } from 'react-share';
 
 export default function ShareModal({ visible, setVisible }) {
-  const classes = ['modal'];
+  let classes = `${styles.modal}`;
 
   if (visible) {
-    classes.push('active');
+    classes += ` ${styles.active}`;
   }
 
   return (
-    <div className={classes.join(' ')}>
-      <button className='close-button' onClick={() => setVisible(false)}>
+    <div className={classes}>
+      <button
+        className={styles.close_button}
+        onClick={() => setVisible(false)}
+      >
         <img src={Group57} />
       </button>
-      <div className='modal-content'>
-        <div className='social_buttons'>
-          <div className='facebook'>
+      <div className={styles.modal_content}>
+        <div className={styles.social_buttons}>
+          <div className={styles.facebook}>
             <FacebookShareButton url={'https://steel-hugs-landing.vercel.app/'}>
               Поділитись у Facebook
             </FacebookShareButton>
           </div>
-          <div className='linkedin'>
+          <div className={styles.linkedin}>
             <LinkedinShareButton url={'https://steel-hugs-landing.vercel.app/'}>
               Поділитись у Linkedin
             </LinkedinShareButton>
           </div>
-          <div className='viber'>
+          <div className={styles.viber}>
             <ViberShareButton url={'https://steel-hugs-landing.vercel.app/'}>
               Поділитись у Viber
             </ViberShareButton>
