@@ -13,92 +13,97 @@
     justify-content: center;
     align-items: center;
   }
-
-  .modal-content {
-    padding: 0 265px 0 265px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 12px;
-    background: white;
-    height: 474px;
-  }
+}
+.modal-content {
+  padding: 0 330px 0 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 12px;
+  background: white;
+  height: 540px;
 }
 
 .modal-content::before {
-  content: url("../../../images/Vector8.svg");
+  content: url('../../../images/Vector8.svg');
   position: relative;
-  top: 345px;
-  left: -266px;
+  top: 370px;
+  left: -332px;
 }
 
 .modal-content::after {
-  content: url("../../../images/Vector7.svg");
+  content: url('../../../images/Vector7.svg');
   position: relative;
-  top: -123px;
-  left: 594px;
+  top: -85px;
+  left: 734px;
 }
 
-.socials {
-  width: 538px;
-  text-align: center;
+.social_buttons {
+  display: flex;
+  flex-direction: column;
 }
 
-.socials p {
-  padding: 16.5px 0 16.5px 0;
-  margin-bottom: 50px;
+.social_buttons div {
   font-size: 24px;
   color: #ffffff;
   border-radius: 12px;
+  width: 613px;
+  height: 75px;
+  text-align: center;
 }
 
-.socials p:nth-child(1) {
+.social_buttons div button {
+  width: 100%;
+  height: 100%;
+}
+
+.facebook {
   background-color: #0666a6;
+  margin-bottom: 26px;
 }
 
-.socials p:nth-child(2) {
+.linkedin {
   background-color: #007ebb;
+  margin-bottom: 26px;
 }
 
-.socials p:nth-child(3) {
+.viber {
   background-color: #7c529e;
-  margin-bottom: 0;
 }
 
-.modal button {
+.close-button {
   position: relative;
-  top: -200px;
-  left: 1045px;
+  top: -230px;
+  left: 1250px;
 }
 
 @media (max-width: 1680px) {
   .modal {
     .modal-content {
-      padding: 0 200px 0 200px;
-      height: 422px;
+      padding: 0 215px 0 215px;
+      height: 480px;
     }
   }
-  .socials {
-    width: 362px;
-  }
-  .socials p {
-    padding: 10px 0 10px 0;
-    font-size: 20px;
-  }
-  .modal button {
-    left: 740px;
-    top: -170px;
+
+  .close-button {
+    left: 820px;
+    top: -205px;
   }
   .modal-content::before {
-    content: url("../../../images/Vector8_1024.svg");
-    top: 325px;
-    left: -201px;
+    content: url('../../../images/Vector8_1024.svg');
+    top: 337px;
+    left: -216px;
   }
 
   .modal-content::after {
-    content: url("../../../images/Vector7_1024.svg");
-    top: -75px;
-    left: 408px;
+    content: url('../../../images/Vector7_1024.svg');
+    top: -31px;
+    left: 471px;
+  }
+
+  .social_buttons div {
+    width: 410px;
+    height: 50px;
   }
 }
 
@@ -106,22 +111,29 @@
   .modal {
     .modal-content {
       padding: 0 143px 0 143px;
+      height: 420px;
     }
   }
   .modal-content::before {
-    content: url("../../../images/Vector8_768.svg");
-    top: 317px;
+    content: url('../../../images/Vector8_768.svg');
+    top: 300px;
     left: -144px;
   }
   .modal-content::after {
-    content: url("../../../images/Vector7_768.svg");
+    content: url('../../../images/Vector7_768.svg');
     top: -29px;
-    left: 375px;
+    left: 377px;
   }
-  .modal button {
+  .close-button {
     top: -177px;
     left: 630px;
   }
+
+  .social_buttons div {
+    width: 362px;
+    height: 44px;
+  }
+
   .socials p {
     margin-bottom: 37px;
   }
@@ -131,23 +143,21 @@
   .modal {
     .modal-content {
       padding: 0 80px 0 80px;
+      height: 430px;
     }
   }
-  .modal button {
+  .close-button {
     left: 505px;
   }
   .modal-content::before {
-    content: url("../../../images/Vector8_562.svg");
-    top: 345px;
-    left: -80px;
+    content: url('../../../images/Vector8_562.svg');
+    top: 313px;
+    left: -81px;
   }
   .modal-content::after {
-    content: url("../../../images/Vector7_562.svg");
-    top: -38px;
+    content: url('../../../images/Vector7_562.svg');
+    top: 0;
     left: 320px;
-  }
-  .socials p:nth-child(3) {
-    margin-bottom: 45px;
   }
 }
 
@@ -155,31 +165,31 @@
   .modal {
     .modal-content {
       padding: 0 40px 0 40px;
-      height: 335px;
+      height: 345px;
     }
   }
-  .modal button {
+  .close-button {
     top: -140px;
     left: 326px;
   }
   .modal-content::before {
-    content: url("../../../images/Vector8_420.svg");
-    top: 247px;
-    left: -40px;
+    content: url('../../../images/Vector8_420.svg');
+    top: 269px;
+    left: -41px;
   }
   .modal-content::after {
-    content: url("../../../images/Vector7_420.svg");
-    top: 11px;
+    content: url('../../../images/Vector7_420.svg');
+    top: 1px;
     left: 204px;
   }
-  .socials {
+
+  .social_buttons div {
+    font-size: 16px;
     width: 260px;
   }
+
   .socials p {
     font-size: 16px;
     margin-bottom: 17px;
-  }
-  .socials p:nth-child(3) {
-    margin-bottom: 0;
   }
 }
