@@ -1,0 +1,129 @@
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+
+  @media screen and (min-width: 562px) {
+    margin-bottom: 20px;
+  }
+}
+
+.subtitle {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1680px) {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+}
+
+.firstTextSmall {
+  font-size: 12px;
+  font-weight: 400;
+
+  @media screen and (min-width: 562px) {
+    display: none;
+  }
+}
+
+.contentBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.image {
+  display: block;
+  width: 150px;
+  height: 139px;
+  margin-right: 8px;
+
+  background-image: url(../../images/gathering.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (min-width: 562px) {
+    width: 250px;
+    height: 220px;
+    margin-right: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 360px;
+    height: 320px;
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    width: 600px;
+    height: 530px;
+    margin-right: 80px;
+  }
+}
+.textBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 182px;
+  @media screen and (min-width: 562px) {
+    width: 250px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 267px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 362px;
+  }
+  @media screen and (min-width: 1680px) {
+    width: 562px;
+  }
+}
+.firstText {
+  display: none;
+  font-size: 12px;
+  font-weight: 400;
+
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 562px) {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1680px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.secondText {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+
+  @media screen and (min-width: 562px) {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1680px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
