@@ -5,7 +5,7 @@ import DonateButton from "../DonateButton/DonateButton";
 
 export default function Brigada({ modal }) {
   return (
-    <section>
+    <section id="section_brigade">
       <div className="container">
         <div className={styles.title}>
           <Heading variant="secondary">Бригада</Heading>

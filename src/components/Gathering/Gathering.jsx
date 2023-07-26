@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 
@@ -23,7 +24,10 @@ import bulletproof from '../../images/Group40.png'
             <div className='gathering-activ'><p className='gathering-bulletproof-item_second'>Забезпечення наших воїнів високоякісними бронежилетами підвищить їх шанси на успішне виконання завдань на передовій та збережуть життя, що є найважливішим!</p>
             </div>
             </div>
+
           </div>
-    </div>
+        </div>
+      </div>
+    </section>
   );
 }

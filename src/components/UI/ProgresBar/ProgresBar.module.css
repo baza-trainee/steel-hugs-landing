@@ -1,0 +1,103 @@
+.container {
+  width: 100%;
+
+  @media screen and (min-width: 562px) {
+    padding-top: 40px;
+  }
+}
+.textContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.textBox {
+  text-align: center;
+}
+.title {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 6px;
+
+  @media screen and (min-width: 562px) {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1680px) {
+    font-size: 32px;
+  }
+}
+.number {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  @media screen and (min-width: 562px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1680px) {
+    font-size: 40px;
+  }
+}
+
+.progresBar {
+  margin: 9px 0;
+
+  width: 100%;
+  height: 17px;
+
+  border-radius: 12px;
+  border: 1px solid #000000;
+
+  @media screen and (min-width: 562px) {
+    margin: 24px 0;
+    height: 52px;
+  }
+  @media screen and (min-width: 1680px) {
+    margin: 40px auto;
+    width: 1040px;
+  }
+}
+
+.progres {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border-right: 4px solid #f5dd00;
+  background-image: url(../../../images/progres_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.annotation {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media screen and (min-width: 562px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1680px) {
+}

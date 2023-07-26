@@ -13,7 +13,7 @@
   position: relative;
   text-align: center;
   width: 590px;
-  height: 74px;
+  height: 118px;
   font-size: 40px;
   font-weight: 600;
   text-shadow: 0 0.4px 0.4px #000000;
@@ -23,9 +23,10 @@
   font-size: 20px;
   text-align: center;
   padding-top: 100px;
+  margin-bottom: 60px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1679px) {
   .footerHead {
     width: 310px;
     font-size: 24px;
@@ -36,7 +37,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 561px) {
   .footerHead {
     width: 260px;
     font-size: 20px;
@@ -44,5 +45,6 @@
 
   .footerRights {
     font-size: 12px;
+    padding-top: 85px;
   }
 }

@@ -33,7 +33,7 @@
 }
 
 .modal-content::after {
-  content: url("../../../mages/Vector7.svg");
+  content: url("../../../images/Vector7.svg");
   position: relative;
   top: -123px;
   left: 594px;
