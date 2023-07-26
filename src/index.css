@@ -142,24 +142,24 @@ legend {
   @media screen and (min-width: 562px) {
     min-width: 562px;
     max-width: 562px;
-    padding: 80px 24px;
+    padding: 40px 24px 40px 24px;
   }
 
   @media screen and (min-width: 768px) {
     min-width: 768px;
     max-width: 768px;
-    padding: 80px 60px;
+    padding: 50px 60px 50px 60px;
   }
 
   @media screen and (min-width: 1024px) {
     min-width: 1024px;
     max-width: 1024px;
-    padding: 100px 140px;
+    padding: 60px 140px 60px 140px;
   }
 
   @media screen and (min-width: 1680px) {
     min-width: 1680px;
     max-width: 1680px;
-    padding: 100px 200px;
+    padding: 60px 200px 60px 200px;
   }
 }

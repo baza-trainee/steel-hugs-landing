@@ -1,9 +1,3 @@
-.footer {
-  padding-top: 100px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .footerContent {
   display: flex;
   flex-direction: column;
@@ -13,17 +7,18 @@
   position: relative;
   text-align: center;
   width: 590px;
-  height: 118px;
+  height: 90px;
   font-size: 40px;
   font-weight: 600;
   text-shadow: 0 0.4px 0.4px #000000;
+  margin-bottom: 30px;
 }
 
 .footerRights {
   font-size: 20px;
   text-align: center;
-  padding-top: 100px;
-  margin-bottom: 60px;
+  padding-top: 140px;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 1679px) {
@@ -45,6 +40,6 @@
 
   .footerRights {
     font-size: 12px;
-    padding-top: 85px;
+    padding-top: 65px;
   }
 }
