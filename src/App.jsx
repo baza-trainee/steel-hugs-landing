@@ -8,7 +8,7 @@ import { useState } from "react";
 import { Modal } from "./components/Modal/Modal";
 import DonateModal from "./components/UI/DonateModal/DonateModal";
 import ThanksModal from "./components/UI/ThanksModal/ThanksModal";
-import Report from "./components/UI/Report/Report";
+// import Report from "./components/UI/Report/Report";
 import Goal from "./components/UI/Goal/Goal";
 
 function App() {
@@ -31,7 +31,6 @@ function App() {
       <Brigada modal={toggleModal} />
       <HowItWorks modal={toggleModal} />
       <Gathering />
-      <Report />
       <Footer />
 
       {isModalOpen && (
