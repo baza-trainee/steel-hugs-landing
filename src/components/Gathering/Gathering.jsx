@@ -1,8 +1,4 @@
-
 import React from 'react';
-
-
-
 import './Gathering.css';
 import { Heading } from "../typography/Heading";
 import title from '../../images/gathering.png'
@@ -28,6 +24,5 @@ import bulletproof from '../../images/Group40.png'
           </div>
         </div>
       </div>
-    </section>
   );
 }
