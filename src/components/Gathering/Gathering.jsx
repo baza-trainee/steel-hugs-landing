@@ -3,7 +3,7 @@ import styles from "./Gathering.module.css";
 
 export default function Gathering() {
   return (
-    <section>
+    <section id="section_collection">
       <div className="container">
         <div className={styles.title}>
           <Heading variant="secondary">Збір</Heading>

@@ -18,7 +18,7 @@ export const Header = ({ links = navLinks }) => {
   const handleButtonClick = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      scrollRef.current = element.offsetTop - 50; // adjust the scroll indent
+      scrollRef.current = element.offsetTop - 70; // adjust the scroll indent
       window.scrollTo(0, scrollRef.current);
       setActive(false);
     }
