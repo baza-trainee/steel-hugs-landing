@@ -1,0 +1,31 @@
+.container {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 90px;
+  right: 120px;
+  width: 80px;
+  height: 80px;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 50%;
+  border: 2px solid #f5dd00;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.container:hover {
+  box-shadow: 0px 0px 12px 0px #f5dd00;
+  background-color: #fff7ac;
+}
+
+.icon {
+  object-fit: fill;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
