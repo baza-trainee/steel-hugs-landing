@@ -48,6 +48,7 @@
 }
 
 .progresBar {
+  overflow: hidden;
   margin: 9px 0;
 
   width: 100%;
