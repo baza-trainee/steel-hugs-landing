@@ -37,6 +37,10 @@ function App() {
     setIsModalOpen((prev) => !prev);
   };
 
+  const toggleThanks = () => {
+    setisThanks((prev) => !prev);
+  };
+
   return (
     <>
       <Header />
