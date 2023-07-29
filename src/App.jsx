@@ -50,6 +50,8 @@ function App() {
       <Gathering />
       <Footer />
 
+      <ScrollButton isVisible={isScrollBtn} />
+
       {isModalOpen && (
         <Modal onClose={toggleModal}>
             <ThanksModal modal={toggleModal} />
