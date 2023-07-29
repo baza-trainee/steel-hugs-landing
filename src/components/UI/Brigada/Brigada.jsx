@@ -1,11 +1,12 @@
 import { Heading } from "../../typography/Heading";
+import { forwardRef } from "react";
 
 import styles from "./Brigada.module.css";
 import DonateButton from "../DonateButton/DonateButton";
 
-export default function Brigada({ modal }) {
+function Brigada({ modal }, ref) {
   return (
-    <section id="section_brigade">
+    <section ref={ref} id="section_brigade">
       <div className="container">
         <div className={styles.title}>
           <Heading variant="secondary">Бригада</Heading>
@@ -30,3 +31,5 @@ export default function Brigada({ modal }) {
     </section>
   );
 }
+
+export default forwardRef(Brigada);
