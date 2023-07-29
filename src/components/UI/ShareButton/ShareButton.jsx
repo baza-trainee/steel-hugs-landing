@@ -3,7 +3,7 @@ import styles from "./ShareButton.module.css";
 import ShareModal from "../ShareModal/ShareModal";
 
 export default function ShareButton() {
-  // let [visible, setVisible] = useState(false);
+  let [visible, setVisible] = useState(false);
   let [buttonClasses, setButtonClasses] = useState(styles.shareButton);
   function clickHandler() {
     setVisible(true);
@@ -14,7 +14,7 @@ export default function ShareButton() {
       <button className={buttonClasses} onClick={() => clickHandler()}>
         Поділитися Обіймами
       </button>
-      {/* <ShareModal visible={visible} setVisible={setVisible} /> */}
+      <ShareModal visible={visible} setVisible={setVisible} />
     </div>
   );
 }
