@@ -16,9 +16,11 @@
   cursor: pointer;
 }
 
-.container:hover {
-  box-shadow: 0px 0px 12px 0px #f5dd00;
-  background-color: #fff7ac;
+@media (min-width: 1024px) {
+  .container:hover {
+    box-shadow: 0px 0px 12px 0px #f5dd00;
+    background-color: #fff7ac;
+  }
 }
 
 .icon {
@@ -46,5 +48,35 @@
   100% {
     transform: translateX(-120vw);
     opacity: 0;
+  }
+}
+
+@media (max-width: 1290px) {
+  .container {
+    right: 40px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon {
+    width: 18px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 810px) {
+  .container {
+    right: 30px;
+  }
+}
+
+@media (max-width: 561px) {
+  .container {
+    right: 240px;
   }
 }
