@@ -1,9 +1,8 @@
 import styles from "./ThanksModal.module.css";
 
-export default function ThanksModal({ modal, thanks }) {
+export default function ThanksModal({ modal }) {
   const handleClick = () => {
     modal();
-    thanks();
   };
   return (
     <div className={styles.thanksContainer}>

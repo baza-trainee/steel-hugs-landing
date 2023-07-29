@@ -6,18 +6,15 @@ import Gathering from "./components/Gathering/Gathering";
 import HowItWorks from "./components/UI/HowItWorks/HowItWorks";
 import { useState } from "react";
 import { Modal } from "./components/Modal/Modal";
-import DonateModal from "./components/UI/DonateModal/DonateModal";
 import ThanksModal from "./components/UI/ThanksModal/ThanksModal";
 // import Report from "./components/UI/Report/Report";
 import Goal from "./components/UI/Goal/Goal";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isThanks, setisThanks] = useState(false);
 
   const toggleModal = () => {
     setIsModalOpen((prev) => !prev);
-    setisThanks(false);
   };
 
   const toggleThanks = () => {
@@ -32,13 +29,9 @@ function App() {
       <HowItWorks modal={toggleModal} />
       <Gathering />
       <Footer />
-
       {isModalOpen && (
         <Modal onClose={toggleModal}>
-          {isThanks && (
-            <ThanksModal modal={toggleModal} thanks={toggleThanks} />
-          )}
-          {!isThanks && <DonateModal isThanks={toggleThanks} />}
+            <ThanksModal modal={toggleModal} />
         </Modal>
       )}
     </>
