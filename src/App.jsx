@@ -13,7 +13,6 @@ import { ScrollButton } from "./components/UI/ScrollButton/ScrollButton";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isThanks, setisThanks] = useState(false);
   const [isScrollBtn, setScrollBtn] = useState(false);
 
   const ref = useRef(null);
@@ -50,8 +49,6 @@ function App() {
       <HowItWorks modal={toggleModal} />
       <Gathering />
       <Footer />
-
-      <ScrollButton isVisible={isScrollBtn} />
 
       {isModalOpen && (
         <Modal onClose={toggleModal}>
