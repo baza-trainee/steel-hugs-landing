@@ -3,7 +3,7 @@ import styles from "./Gathering.module.css";
 
 export default function Gathering() {
   return (
-    <section>
+    <section id="section_collection">
       <div className="container">
         <div className={styles.title}>
           <Heading variant="secondary">Збір</Heading>
@@ -22,7 +22,7 @@ export default function Gathering() {
             </p>
             <p className={styles.secondText}>
               Забезпечення наших воїнів високоякісними бронежилетами підвищить
-              їх шанси на успішне виконання завдань на передовій та збережуть
+              їх шанси на успішне виконання завдань на передовій та збережe
               життя, що є найважливішим!
             </p>
           </div>
