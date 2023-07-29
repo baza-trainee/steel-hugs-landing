@@ -9,6 +9,7 @@
   z-index: 99999;
 
   &.active {
+    margin-left: -25px;
     display: flex;
     justify-content: center;
     align-items: center;
