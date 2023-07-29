@@ -8,7 +8,6 @@ const navLinks = [
   { text: "Бригада", sectionId: "section_brigade" },
   { text: "Як це працює", sectionId: "section_how_it_works" },
   { text: "Збір", sectionId: "section_collection" },
-  { text: "Звіт", sectionId: "section_report" },
 ];
 
 export const Header = ({ links = navLinks }) => {
