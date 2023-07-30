@@ -19,10 +19,8 @@
   background: #ffffff;
   border-radius: 12px;
   overflow: hidden;
-  width: 340px;
-  height: 355px;
 
-  @media screen and (min-width: 562px) {
+  @media screen and (min-width: 562px) and (orientation: portrait) {
     width: 514px;
     height: 498px;
   }
@@ -38,5 +36,10 @@
 
   @media screen and (min-width: 1680px) {
     width: 1064px;
+  }
+
+  @media screen and (orientation: landscape) and (min-width: 560px) {
+    width: 340px;
+    height: 355px;
   }
 }
